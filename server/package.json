@@ -1,24 +1,36 @@
 {
-  "name": "cyporess-github-actions-demo",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joelgrimberg/cypress-demo.git"
+    "start": "nodemon src/app.js --exec  \"node\"",
+    "prod": "node src/app.js",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js  --fix",
+    "seed": "node seed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joelgrimberg/cypress-demo/issues"
-  },
-  "homepage": "https://github.com/joelgrimberg/cypress-demo#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hoek": "~>6.1.3",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "2.29.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.0",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.11.0",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "nodemon": "^2.0.15"
   }
 }

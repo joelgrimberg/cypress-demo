@@ -12,12 +12,10 @@ jobs:
       - uses: bahmutov/npm-install@v1
         with:
           working-directory: server
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           working-directory: ./
-          start: "npm start --prefix server, npm start --prefix client"
-          wait-on: "http://localhost:8000, http://localhost:3000"
+          start: "npm run prod --prefix server, npm start --prefix client"
+          wait-on: "http://localhost:8080, http://localhost:3000"
           project: ./client
