@@ -17,5 +17,5 @@ jobs:
         with:
           working-directory: ./
           start: "npm run prod --prefix server, npm start --prefix client"
-          wait-on: "http://localhost:8081, http://localhost:3000"
+          wait-on: "http://127.0.0.1:8081, http://localhost:3000"
           project: ./client
