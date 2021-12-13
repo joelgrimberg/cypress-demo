@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/joelgrimberg/cypress-demo#readme",
   "devDependencies": {
-    "prettier": "^2.5.1",
-    "husky": "^7.0.4"
+    "cypress": "^9.1.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1"
   },
   "husky": {
     "hooks": {
