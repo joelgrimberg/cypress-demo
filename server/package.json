@@ -18,9 +18,6 @@
     "url": "https://github.com/joelgrimberg/cypress-demo/issues"
   },
   "homepage": "https://github.com/joelgrimberg/cypress-demo#readme",
-  "devDependencies": {
-    "cypress": "^9.1.1"
-  },
   "dependencies": {
     "express": "^4.17.1"
   }
