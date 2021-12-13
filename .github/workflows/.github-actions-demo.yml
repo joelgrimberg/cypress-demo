@@ -20,6 +20,5 @@ jobs:
           working-directory: |
             client
             server
-          start: "npm start --prefix ../server", "npm start"
+          start: "npm start --prefix ../server"
           wait-on: "http://localhost:8000"
-
